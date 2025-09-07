@@ -1,0 +1,110 @@
+/* Reset para todos los elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc; /* Fondo blanco azulado muy claro, casi blanco */
+    color: #4a4a4a; /* Un gris suave para el texto principal */
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 1fr 10vh;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra más suave */
+    border-radius: 10px; /* Bordes más redondeados para un look amigable */
+    overflow: hidden; /* Asegura que la sombra y los bordes se apliquen bien */
+}
+
+.header {
+    background-color: #b3e0dc; /* Azul pastel claro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-bottom: 1px solid #a0cfcb; /* Línea sutil para separar */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #4f6d7a; /* Un azul grisáceo más oscuro para el título */
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    min-height: 0;
+}
+
+.nav {
+    background-color: #fce1e4; /* Rosa pastel suave */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Más espacio entre los enlaces */
+    overflow-y: auto;
+    border-right: 1px solid #fbd0d5; /* Separador sutil */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #8c5a61; /* Un rojo frambuesa suave para el texto de los enlaces */
+    font-weight: 600; /* Un poco más de negrita */
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 8px; /* Bordes redondeados para los enlaces */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.nav a:hover {
+    background-color: #fbd0d5; /* Un tono más oscuro de rosa al pasar el ratón */
+    color: #70474e; /* El color del texto se hace ligeramente más oscuro */
+    transform: translateX(5px); /* Efecto de desplazamiento sutil */
+}
+
+.section {
+    background-color: #ffffff; /* Blanco puro para el contenido principal */
+    color: #4a4a4a;
+    padding: 30px; /* Más padding para el contenido */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Más espacio entre artículos o párrafos */
+    overflow-y: auto;
+}
+
+.section h2 {
+    font-size: 2.2rem;
+    color: #6a8e8f; /* Un color verde azulado suave para los títulos */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e0f2f1; /* Subrayado sutil */
+    padding-bottom: 8px;
+}
+
+.section p {
+    line-height: 1.7; /* Interlineado para mejor legibilidad */
+    font-size: 1.05rem;
+}
+
+.footer {
+    background-color: #c9e6c9; /* Verde menta pastel */
+    color: #5c7d6c; /* Un verde más oscuro para el texto del footer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-top: 1px solid #b7d6b7; /* Línea sutil sobre el footer */
+}
+
+.footer p {
+    margin: 0;
+    letter-spacing: 0.8px;
+}
